@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
- * printf.c - this gonna display an array
- * printf: this function display an array
+ * size.c - this gonna display an array
+ * sizeof(): this function display an array
  *
  * Description: this use a command to display an array and next return
  * section header: idk
@@ -14,6 +14,10 @@
 
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,");
-	return (0);
+        sizeof(char);
+	sizeof(int);
+	sizeof(long int);
+	sizeof(long long int);
+	sizeof(float);
+        return (0);
 }
