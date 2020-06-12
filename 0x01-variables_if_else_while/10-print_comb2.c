@@ -10,10 +10,10 @@
 
 int main(void)
 {
-	int x = 0;
+	int x;
 	int y;
 
-	for (x; x <= 9;)
+	for (x=0; x <= 9;)
 	{
 		for (y = 0; y <= 9;)
 		{
