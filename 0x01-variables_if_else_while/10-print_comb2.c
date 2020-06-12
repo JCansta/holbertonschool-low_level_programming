@@ -10,21 +10,23 @@
 
 int main(void)
 {
-	char x = '0';
-	char y;
+	int x = 0;
+	int y;
 
-	for (x; x <= '9'; x++)
+	for (x; x <= 9;)
 	{
-		for (y = '0'; y <= '9'; y++)
+		for (y = 0; y <= 9;)
 		{
-			putchar(x);
-			putchar(y);
-			if (x < '9' || y < '9')
+			putchar(x + '0');
+			putchar(y + '0');
+			if (x < 9 || y < 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+		y++;
 		}
+	x++;
 	}
 	putchar('\n');
 	return (0);
