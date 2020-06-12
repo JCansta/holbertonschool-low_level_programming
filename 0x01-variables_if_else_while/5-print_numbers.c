@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /* more headers goes there */
 
@@ -12,12 +11,10 @@ int main(void)
 {
         int x;
 	
-	for (x = 0; x < 10 ;)
+	for (x = 0; x < 10 ; x++)
 	{
 		printf("%d", x);
-	x++;
 	}
 	putchar('\n');
 	return (0);
 }
-
