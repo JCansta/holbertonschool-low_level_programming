@@ -18,7 +18,7 @@ int main(void)
 	int b = 2;
 
 	for (x = 0; x <= 7;)
-	{
+		{
 		for (y = i; y <= 8;)
 		{
 			for (z = a; z <= 9;)
