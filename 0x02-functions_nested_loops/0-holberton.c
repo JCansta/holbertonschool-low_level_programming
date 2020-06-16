@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	int i=0;
+	int i = 0;
 	char string[] = "Holberton\n";
 
-	while(string[i]!='\0')
+	while (string[i] != '\0')
 	{
 		_putchar(string[i]);
 		i++;

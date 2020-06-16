@@ -16,11 +16,11 @@ void times_table(void)
 	{
 		for (int j = 0; j <= 9; j++)
 		{
-			mult = i*j;
+			mult = i * j;
 			if (mult >= 10)
 			{
-			_putchar(mult/10 + '0');
-			dec = mult%10;
+			_putchar(mult / 10 + '0');
+			dec = mult % 10;
 			_putchar(dec + '0');
 			}
 			else
