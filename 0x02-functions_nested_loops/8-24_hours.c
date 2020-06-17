@@ -2,8 +2,7 @@
 
 /* more headers goes there */
 /**
-*jack_bauer-prototype function,
-*function print 1 if the char is a letter
+*jack_bauer-prototype function,function print
 *Return: the return of finish file
 */
 
