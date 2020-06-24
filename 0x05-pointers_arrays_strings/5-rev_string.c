@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
  *rev_string - print in rev
  *@s: give the pointing direction
