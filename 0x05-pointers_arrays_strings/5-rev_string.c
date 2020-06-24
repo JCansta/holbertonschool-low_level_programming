@@ -1,5 +1,6 @@
 #include "holberton.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  *rev_string - print in rev
  *@s: give the pointing direction
@@ -9,17 +10,16 @@
 void rev_string(char *s)
 {
 	int i = 0, k = 0;
+	int a = (sizeof(s) / sizeof(s[0]));
+	char rev[a];
 
-	while (s[i] != '\0') /*esto busca el tamaño del array*/
+	while (s[i] != '\0')
 	{
 		i++;
 	}
-
-	char rev[i];
-
 	i--;
 
-	for (; i >= 0; i--) /*usando el tamaño del array comienzo desde el final*/
+	for (; i >= 0; i--)
 	{
 		rev[k] =  s[i];
 		k++;
@@ -27,7 +27,7 @@ void rev_string(char *s)
 
 	i = 0;
 
-	while (i < k) /*aqui ya usando el array invertido lo devuelvo al original*/
+	while (i < k)
 	{
 		s[i] = rev[i];
 		i++;
