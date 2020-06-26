@@ -11,22 +11,26 @@ char *cap_string(char *s)
 	char car[] = {' ', '\t', '\n', ',', ';', '?', '"', '(', ')', '{', '}'};
 	int i, val;
 
+	if (*count >= 'a' && *count <= 'z')
+		*count = *count - 32;
+
+	count++;
 	while (*count != '\0')
 	{
 		i = 0;
 		val = 0;
 		while (car[i] != '\0')
 		{
-			if (*count == car[i])
+			if (*(count - 1) == car[i])
 			{
 				val = 1;
 				break;
 			}
 			i++;
 		}
-		if (val == 1 && (*(count + 1)  >= 'a' && *(count + 1) <= 'z'))
+		if (val == 1 && (*count  >= 'a' && *count <= 'z'))
 		{
-			*(count + 1) = *(count + 1) - 32;
+			*count = *count - 32;
 		}
 		count++;
 	}
