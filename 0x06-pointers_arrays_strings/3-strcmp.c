@@ -10,12 +10,19 @@ int _strcmp(char *s1, char *s2)
 {
 	char *primer = s1;
 	char *segund = s2;
-	int cont;
+	int cont = 0;
 
 	while (*primer != '\0' && *segund != '\0')
 	{
-		cont = (*primer != *segund) ? (*primer - *segund) : 0;
+	/*
+	*	cont = (*primer != *segund) ? (*primer - *segund) : 0;
+	*/
+		cont = (*primer - *segund);
+
+		if (*primer != '\0')
 			primer++;
+
+		if (*segund != '\0')
 			segund++;
 
 		if (*primer != *segund)
