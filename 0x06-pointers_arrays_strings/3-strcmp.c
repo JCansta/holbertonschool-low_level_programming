@@ -10,19 +10,17 @@ int _strcmp(char *s1, char *s2)
 {
 	char *primer = s1;
 	char *segund = s2;
-	int cont = 0, cont2 = 0, dif;
+	int cont;
 
-	while (*primer != '\0')
+	while (*primer != '\0' && *segund != '\0')
 	{
-		cont = cont + *primer;
-		primer++;
-	}
-	while (*segund != '\0')
-	{
-		cont2 = cont2 + *segund;
-		segund++;
-	}
-	dif = cont - cont2;
+		cont = (*primer != *segund) ? (*primer - *segund) : 0;
+			primer++;
+			segund++;
 
-	return (dif);
+		if (*primer != *segund)
+			break;
+	}
+
+	return (cont);
 }
