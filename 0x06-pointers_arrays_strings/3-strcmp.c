@@ -14,16 +14,11 @@ int _strcmp(char *s1, char *s2)
 
 	while (*primer != '\0' && *segund != '\0')
 	{
-	/*
-	*	cont = (*primer != *segund) ? (*primer - *segund) : 0;
-	*/
-		cont = (*primer - *segund);
+	
+		cont = (*primer != *segund) ? (*primer - *segund) : 0;
 
-		if (*primer != '\0')
-			primer++;
-
-		if (*segund != '\0')
-			segund++;
+		primer++;
+		segund++;
 
 		if (*primer != *segund)
 			break;
