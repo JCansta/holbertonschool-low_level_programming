@@ -16,8 +16,8 @@ void reverse_array(int *a, int n)
 		end++;
 
 	end--;
-	
-	while (end != ini)
+
+	while (end != ini || end < ini)
 	{
 		temp = *end;
 		*end = *ini;
