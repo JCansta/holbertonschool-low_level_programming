@@ -8,7 +8,7 @@
 char *cap_string(char *s)
 {
 	char *count = s;
-	char car[] = {' ', '\t', '\n', ',', '.', ';', '?', '"', '(', ')', '{', '}'};
+	char car[] = {' ', '\t', '\n', ',', '.', ';', '!', '?', '"', '(', ')', '{', '}'};
 	int i, val;
 
 	if (*count >= 'a' && *count <= 'z')
