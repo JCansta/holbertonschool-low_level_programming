@@ -7,7 +7,13 @@
 
 void print_number(int n)
 {
-	int x, div = 10000, mod = 10;
+	int x = n, div = 1, mod = 10;
+
+	while (x != 0)
+	{
+		x = x / 10;
+		div = div * 10;
+	}
 	if (n < 0)
 	{
 		_putchar('-');
