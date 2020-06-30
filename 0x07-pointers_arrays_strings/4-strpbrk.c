@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strpbrk - pasa por toda la cadena S y busca la priemra ocurrencia de accept.
+ * _strpbrk - pasa por toda la cadena S y busca la primera aparicion de accept
  * @s: la cadena.
  * @accept: la subcadena
  * Return: Always 0.
