@@ -11,8 +11,6 @@ unsigned int _strspn(char *s, char *accept)
 	char *str1 = s;
 	char *str2 = accept;
 	int i, max = 0;
-	if (*str1 == '\0')
-		return (0);
 
 	while (*str1 != '\0')
 	{
