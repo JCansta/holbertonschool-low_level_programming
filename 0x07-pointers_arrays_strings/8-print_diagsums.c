@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * print_diagsums - imprime la suma de las diagonales.
- * @a: array 2D
- * @size: size of the array 2D.
+ * set_string - cambia la direccion guardada en *s.
+ * @s: double pointer to string
+ * @to: pointer to string
  * Return: Always 0.
  */
 
