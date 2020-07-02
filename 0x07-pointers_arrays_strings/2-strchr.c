@@ -20,5 +20,5 @@ char *_strchr(char *s, char c)
 		p++;
 	}
 
-	return (0);
+	return (p);
 }
