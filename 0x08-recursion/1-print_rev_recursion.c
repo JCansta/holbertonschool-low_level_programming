@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * _puts_recursion - print a string followd by a new line
+ * _print_rev_recursion - print a string followd by a new line
  * @s: the string
  * Return: Always 0.
  */
