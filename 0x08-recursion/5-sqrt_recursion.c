@@ -13,6 +13,12 @@ int _sqrt_recursion(int n)
 
 	return (r);
 }
+/**
+ * sqrt_fun - search for the root
+ * @r: r to find the root
+ * @i: same n of the function
+ * Return: return the number if is a natural root
+ */
 int sqrt_fun(int r, int i)
 {
 	if ((r * r) > i)
