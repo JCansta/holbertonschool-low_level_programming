@@ -7,24 +7,7 @@
  * Return: Always 0.
  */
 
-void print_diagsums(int *a, int size)
+void set_string(char **s, char *to)
 {
-	int i, j;
-	int *p = a;
-	int dig1 = 0, dig2 = 0;
-
-	for (i = 0; i < size; i++)
-	{
-		for (j = 0; j < size; j++)
-		{
-			if (i == j)
-				dig1 = dig1 + *p;
-
-			if ((i + j) == (size - 1))
-				dig2 = dig2 + *p;
-
-			p++;
-		}
-	}
-	printf("%d, %d\n", dig1, dig2);
+	*s = to;
 }
