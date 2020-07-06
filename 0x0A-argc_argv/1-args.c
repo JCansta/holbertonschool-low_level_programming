@@ -8,8 +8,8 @@
 *Return: the return of finish file
 */
 
-int main(int argc, char *argv[argc])
+int main(int argc, char *argv[])
 {
 	(void)*argv[argc];
-	printf("%d\n", argc);
+	printf("%d\n", (argc - 1));
 }
