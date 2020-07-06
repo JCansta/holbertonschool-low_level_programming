@@ -8,7 +8,7 @@
 *Return: the return of finish file
 */
 
-int main(int argc, char *argv[argc])
+int main(int argc, char *argv[])
 {
 	while (argc--)
 		printf("%s\n", *argv++);
