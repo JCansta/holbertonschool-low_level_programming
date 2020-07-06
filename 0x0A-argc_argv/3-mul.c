@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	argc--;
 	argv++;
 	while (argc--)
-	{		
+	{
 		x[y] = atoi(*argv);
 		y++;
 		argv++;
