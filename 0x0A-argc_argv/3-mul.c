@@ -9,7 +9,7 @@
 *Return: the return of finish file
 */
 
-int main(int argc, char *argv[argc])
+int main(int argc, char *argv[])
 {
 	int mult, y = 0;
 	int x[2];
