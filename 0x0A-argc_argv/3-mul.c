@@ -11,7 +11,8 @@
 
 int main(int argc, char *argv[argc])
 {
-	int mult, x[2], y = 0;
+	int mult, y = 0;
+	int x[2];
 
 	if (argc != 3)
 	{
@@ -21,8 +22,7 @@ int main(int argc, char *argv[argc])
 	argc--;
 	argv++;
 	while (argc--)
-	{
-		
+	{		
 		x[y] = atoi(*argv);
 		y++;
 		argv++;
