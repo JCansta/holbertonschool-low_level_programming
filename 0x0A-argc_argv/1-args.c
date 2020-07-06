@@ -1,6 +1,5 @@
-#include "holberton.h"
 #include <stdio.h>
-/* more headers goes there */
+
 /**
 * main-print the name of the file,
 *@argc: how long is the function
