@@ -51,11 +51,9 @@ char *_strdup(char *str)
 {
 	char *dst = malloc(_strlen(str) + 1);
 
-	if (dst == NULL)
-		return (NULL);
-	if (dst == NULL)
+	if (dst == '\0')
 	{
-		return (NULL);
+		return ('\0');
 	}
 	_strcpy(dst, str);
 
