@@ -41,6 +41,9 @@ char *str_concat(char *s1, char *s2)
 	char *p = (char *) malloc((sum * sizeof(char)) + 1);
 	int d = 0;
 
+	if (p == NULL)
+		return (NULL);
+
 	while (i < sum)
 	{
 		if (i < _strlen(s1))
@@ -55,5 +58,6 @@ char *str_concat(char *s1, char *s2)
 
 		i++;
 	}
+
 	return (p);
 }
