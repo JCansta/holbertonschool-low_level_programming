@@ -49,9 +49,14 @@ int _strlen(char *s)
 
 char *_strdup(char *str)
 {
-	char *dst = malloc(_strlen(str) + 1);
+	char *dst; 
+	
+	if (str == NULL)
+		return (NULL);
 
-	if (str == NULL || dst == NULL)
+	dst = malloc(_strlen(str) + 1);
+
+	if (dst == NULL)
 		return (NULL);
 
 	_strcpy(dst, str);
