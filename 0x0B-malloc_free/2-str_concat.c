@@ -41,7 +41,7 @@ char *str_concat(char *s1, char *s2)
 	char *p = (char *) malloc((sum * sizeof(char)) + 1);
 	int d = 0;
 
-	while (i <= sum)
+	while (i < sum)
 	{
 		if (i < _strlen(s1))
 		{
