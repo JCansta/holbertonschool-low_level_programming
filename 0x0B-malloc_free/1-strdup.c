@@ -49,7 +49,7 @@ int _strlen(char *s)
 
 char *_strdup(char *str)
 {
-	if (*str == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	char *dst = malloc(_strlen(str) + 1);
