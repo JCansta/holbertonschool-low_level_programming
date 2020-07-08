@@ -49,8 +49,8 @@ int _strlen(char *s)
 
 char *_strdup(char *str)
 {
-	char *dst; 
-	
+	char *dst;
+
 	if (str == NULL)
 		return (NULL);
 
