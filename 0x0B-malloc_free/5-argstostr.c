@@ -83,8 +83,9 @@ char *argstostr(int ac, char **av)
 		i++;
 	}
 	sum = ((sum * sizeof(char)) + ac);
-	//printf("a ver %d \n", (sum));
-	
+	/*
+	printf("a ver %d \n", (sum));
+	*/
 	p = (char *)malloc(sum);
 
 	if (p == NULL)
