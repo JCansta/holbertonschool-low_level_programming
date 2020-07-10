@@ -3,6 +3,26 @@
 #include <stdlib.h>
 
 /**
+ *free_grid - free the memory use it malloc
+ *@grid: the 2 dimensional grid to free.
+ *@height: columns.
+ *Return: Always 0.
+ */
+
+void free_grid(int **grid, int height)
+{
+	int i;
+
+	while (i < height)
+	{
+		free(grid[i]);
+		i++;
+	}
+	free(grid);
+
+}
+
+/**
  *alloc_grid - create a 2D array with malloc
  *@width: filas
  *@height: columnas
@@ -21,7 +41,7 @@ int **alloc_grid(int width, int height)
 
 	if (p == NULL)
 	{
-		free(p);
+		free_grid(p, height);
 		return (NULL);
 	}
 
@@ -30,7 +50,7 @@ int **alloc_grid(int width, int height)
 		p[i] = (int *)malloc(width * sizeof(int));
 		if (p[i] == NULL)
 		{
-			free(p);
+			free_grid(p, height);
 			return (NULL);
 		}
 		i++;
