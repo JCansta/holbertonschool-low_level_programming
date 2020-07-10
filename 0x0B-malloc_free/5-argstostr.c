@@ -70,22 +70,22 @@ char *str_concat(char *s1, char *s2)
 
 char *argstostr(int ac, char **av)
 {
-	int sum = 0, i = 0;
+	int sum = 0, i = 1;
 	char *p;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	/*
+	
 	while (i < ac)
 	{
-	*/
-		sum =_strlen(av[i]);
-	/*
-	   i++;
+		sum = sum + _strlen(av[i]);
+		i++;
 	}
-	*/
-	p = (char *)malloc((sum * sizeof(char)) + 1);
+	sum = ((sum * sizeof(char)) + ac);
+	//printf("a ver %d \n", (sum));
+	
+	p = (char *)malloc(sum);
 
 	if (p == NULL)
 		return (NULL);
