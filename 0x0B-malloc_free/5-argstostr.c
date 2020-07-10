@@ -85,7 +85,7 @@ char *argstostr(int ac, char **av)
 	   i++;
 	}
 	*/
-	p = (char *)malloc((sum * sizeof(char)) + ac);
+	p = (char *)malloc((sum * sizeof(char)) + 1);
 
 	if (p == NULL)
 		return (NULL);
