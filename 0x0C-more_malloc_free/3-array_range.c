@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * _calloc - create an array using calloc.
- * @nmemb: number of elements
- * @size: size of calloc
+ * array_range - create an array of integers
+ * @min: min value
+ * @max: max value
  * Return: return a pointer created with malloc
 */
 
