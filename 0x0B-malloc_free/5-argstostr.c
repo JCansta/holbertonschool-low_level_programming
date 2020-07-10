@@ -76,12 +76,15 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
+	/*
 	while (i < ac)
 	{
-		sum = sum + _strlen(av[i]);
-		i++;
+	*/
+		sum =_strlen(av[i]);
+	/*
+	   i++;
 	}
-
+	*/
 	p = (char *)malloc((sum * sizeof(char)) + ac);
 
 	if (p == NULL)
