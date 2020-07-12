@@ -30,9 +30,9 @@ void *_strncat(char *p, char *dest, char *src, int n)
 		i++;
 	}
 
-	*p = '\0';
+	*s = '\0';
 
-	return (p);
+	return (s);
 }
 
 /**
