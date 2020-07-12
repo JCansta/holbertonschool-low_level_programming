@@ -25,7 +25,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	while (i < n)
 	{
-		p[i] = '0';
+		p[i] = 0;
 		i++;
 	}
 
