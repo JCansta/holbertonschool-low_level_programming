@@ -3,39 +3,6 @@
 #include <stdlib.h>
 
 /**
- * _strncat - give a concatenate string.
- * @p: where two string is gonna locate.
- * @dest: bring a direction.
- * @src: bring a int.
- * @n: number of letters of the array to copy.
- * Return: Always 0.
- */
-
-void *_strncat(char *p, char *dest, char *src, int n)
-{
-	int i;
-	char *s = p;
-
-	while (*dest != '\0')
-	{
-		*s = *dest;
-		s++;
-		dest++;
-	}
-	while (i < n)
-	{
-		*s = *src;
-		s++;
-		src++;
-		i++;
-	}
-
-	*s = '\0';
-
-	return (s);
-}
-
-/**
  *_strlen - chekc the nuber of elements of a array
  *@s: give the pointing direction
  *Return: Always 0.
@@ -61,7 +28,8 @@ int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int l1, l2;
+	char *s;
+	unsigned int l1, l2, i = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -80,6 +48,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (p == NULL)
 		return (NULL);
 
-	_strncat(p, s1, s2, n);
+	s = p;
+
+
+        while (*s1 != '\0')
+        {
+                *s = *s1;
+                s++;
+                s1++;
+        }
+        while (i < n)
+        {
+                *s = *s2;
+                s++;
+                s2++;
+                i++;
+        }
+
+        *s = '\0';
+
 	return (p);
 }
