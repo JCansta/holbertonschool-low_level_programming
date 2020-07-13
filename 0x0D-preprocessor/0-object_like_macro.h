@@ -1,2 +1,3 @@
-#include "0-object_likee_macro.h"
+#ifndef SIZE
 #define SIZE 1024
+#endif
