@@ -2,8 +2,8 @@
 #include "dog.h"
 
 /**
-* init_dog - print the name of the file,
-*@dog: structure dog.
+* print_dog - print the name of the file,
+*@d: structure dog.
 *Return: the return of finish file
 */
 
@@ -11,8 +11,15 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
-	printf("Name: %s\n", d->name);
+
+	if (d->name == NULL)
+		printf("Name: \n");
+	else
+		printf("Name: %s\n", d->name);
 	printf("Age: %f\n", d->age);
-	printf("Owner: %s\n", d->owner);
+	if (d->owner == NULL)
+		printf("Owner: \n");
+	else
+		printf("Owner: %s\n", d->owner);
 
 }
