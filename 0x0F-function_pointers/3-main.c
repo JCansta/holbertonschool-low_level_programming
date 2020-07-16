@@ -28,7 +28,7 @@ int main(int av, char **ar)
 		exit(99);
 	}
 
-	if ((*ar[2][0] == '/' || *ar[2][0] == '%') && num2 == 0)
+	if ((ar[2][0] == '/' || ar[2][0] == '%') && num2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
