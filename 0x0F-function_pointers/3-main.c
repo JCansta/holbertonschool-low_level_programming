@@ -10,7 +10,7 @@
  */
 int main(int av, char **ar)
 {
-	int num1 = atoi(ar[1]), num2 = atoi(ar[3]);
+	int num1, num2;
 	int value;
 	int (*p)(int, int);
 
@@ -19,6 +19,8 @@ int main(int av, char **ar)
 		printf("Error\n");
 		exit(98);
 	}
+	num1 = atoi(ar[1]);
+	num2 = atoi(ar[3]);
 
 	p = (*get_op_func)(ar[2]);
 
