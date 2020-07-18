@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- *_isdigit - chekc if char is upper
- *@c: value of char
+ *sum_them_all - sum all arguments
+ *@n: values of arguments
  *Return: Always 0.
  */
 
