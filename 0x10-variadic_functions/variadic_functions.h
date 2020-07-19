@@ -5,7 +5,7 @@
  * struct arg - struct arg
  *
  * @op: operator
- * @func: the function associated
+ * @f: the function associated
  */
 typedef struct arg
 {
