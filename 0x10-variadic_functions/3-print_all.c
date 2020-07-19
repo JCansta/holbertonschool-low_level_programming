@@ -58,6 +58,7 @@ void print_all(const char * const format, ...)
 	int i = 0, j = 0;
 	void (*fa)(va_list);
 	char *sep = "";
+
 	arg_t func[] = {
 		{"c", _char},
 		{"i", _integer},
@@ -66,7 +67,9 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 	va_start(_string, format);
-	while (format[i] != '\0' && format != NULL)
+	if (format == NULL)
+		return;
+	while (format[i] != '\0')
 	{
 		j = 0;
 		while (func[j].op != NULL)
