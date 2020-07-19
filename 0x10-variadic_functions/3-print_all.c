@@ -66,10 +66,9 @@ void print_all(const char * const format, ...)
 		{"s", _char_pointer},
 		{NULL, NULL}
 	};
+
 	va_start(_string, format);
-	if (format == NULL)
-		return;
-	while (format[i] != '\0')
+	while (format[i] != '\0' && format == NULL)
 	{
 		j = 0;
 		while (func[j].op != NULL)
