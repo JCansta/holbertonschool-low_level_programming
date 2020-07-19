@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- *print_numbers - print all numbers
- *@separator: the character between the numebrs
+ *print_strings - print all stirngs
+ *@separator: the character between the words
  *@n: values of arguments
  *Return: Always 0.
  */
@@ -16,6 +16,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	if (n == 0)
 		return;
+	if (separator == NULL)
+		separator = "";
 	va_start(string, n);
 	for (i = 0; i < n; i++)
 	{
@@ -24,7 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("(nil)");
 		else
 			printf("%s", word);
-		if (separator != NULL && i < n - 1)
+		if (i < n - 1)
 			printf("%s", separator);
 
 	}
