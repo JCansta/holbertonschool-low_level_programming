@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- *print_list - print all elements of a list
+ *list_len - return the number of elementes in the node
  *@h: head of the file to move in the nodes
  *Return: return the number of nodes
  */
