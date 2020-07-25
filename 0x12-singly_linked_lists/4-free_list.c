@@ -31,7 +31,8 @@ void free_list(list_t *head)
 	{
 
 		next_node = current->next;
-		free(current->str);
+		if (current->str != NULL)
+			free(current->str);
 		free(current);
 		current = next_node;
 
