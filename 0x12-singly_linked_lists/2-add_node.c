@@ -15,13 +15,21 @@ list_t *add_node(list_t **head, const char *str)
 	char *c;
 	unsigned int i = 0;
 
-	if (head == NULL)
+	if (head == NULL || str == NULL)
 		return (NULL);
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
+	{
+		free(new);
 		return (NULL);
+	}
 
 	c = strdup(str);
+	if (c == NULL)
+	{
+		free(c);
+		return (NULL);
+	}
 	(void)str;
 	new->str = c;
 	while (c[i] != '\0')
