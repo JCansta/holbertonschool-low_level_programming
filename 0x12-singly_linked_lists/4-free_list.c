@@ -10,6 +10,8 @@
 
 void free_list(list_t *head)
 {
+	list_t *current = head;
+	list_t *next_node;
 
 	if (head == NULL)
 	{
@@ -24,8 +26,6 @@ void free_list(list_t *head)
 *		head = head->next;
 *	}
 */
-	list_t *current = head;
-	list_t *next_node;
 
 	while (current != NULL)
 	{
