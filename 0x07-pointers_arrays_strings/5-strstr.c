@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 /**
  * _strstr - busca la primera ocurencia de la subcadena
  * needle en haystack
@@ -9,31 +10,28 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *str1 = haystack;
-	char *str2 = needle;
-	char *save;
-	int val = 0;
+	int i = 0, j, save;
+	char *null = "nil";
 
-	while (*str1 != '\0')
+	if (needle[0] == '\0')
+		return (haystack);
+
+	while (haystack[i] != '\0')
 	{
-		str2 = needle;
-			if (*str1 == *str2)
+		j = 0;
+		if (haystack[i] == needle[0])
+		{
+			save = i;
+			while (haystack[i] == needle[j])
 			{
-				save = str1;
-				while (*str2 != '\0' && *str1 == *str2)
-				{
-					str1++;
-					str2++;
-					if (*str2 == '\0')
-					{
-						val = 1;
-					}
-				}
-				if (val == 1)
-					return (save);
+				if (needle[j + 1] == '\0')
+					return (&haystack[save]);
+				j++;
+				i++;
 			}
-		str1++;
+			i = save;
+		}
+		i++;
 	}
-	return (str1);
-
+	return (null);
 }
