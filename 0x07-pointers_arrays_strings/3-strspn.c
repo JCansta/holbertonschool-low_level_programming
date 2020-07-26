@@ -22,18 +22,16 @@ unsigned int _strspn(char *s, char *accept)
 				str2 = accept;
 				while (*str2 != '\0')
 				{
-					if (str2 == accept)
-						str1++;
-
 					if (*str2 == *str1)
 					{
 						i++;
 						str2 = accept;
+						str1++;
 					}
 					else
 						str2++;
-
 				}
+				return (i - 1);
 				if (i > max)
 					max = i;
 			}
