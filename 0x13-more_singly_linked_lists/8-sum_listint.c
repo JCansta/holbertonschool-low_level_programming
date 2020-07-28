@@ -3,10 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *get_nodeint_at_index - return the pointer to the number node of index say
+ *sum_listint - sum every n of the linked list
  *@head: the head of the node
- *@index: the number of the node to return
- *Return: the pointer to the node
+ *Return: the add of everything
  */
 int sum_listint(listint_t *head)
 {
