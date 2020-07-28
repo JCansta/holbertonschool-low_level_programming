@@ -15,7 +15,10 @@ int pop_listint(listint_t **head)
 	listint_t *next;
 
 	if (head == NULL)
+	{
+		head = NULL;
 		return (0);
+	}
 	current = *head;
 	save = current->n;
 	next = current->next;
