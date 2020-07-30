@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
  *binary_to_uint - convert binary to unsigned int.
  *@b: values of arguments
@@ -12,6 +11,8 @@ unsigned int binary_to_uint(const char *b)
 	int i = 0;
 	unsigned int n = 0, mult = 1;
 
+	if (b == NULL)
+		return (0);
 	while (b[i] != '\0')
 	{
 		i++;
