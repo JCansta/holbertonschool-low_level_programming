@@ -9,28 +9,18 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int size = sizeof(n) * 8, count, count2, index = 0, flip = 0;
-	unsigned long int x, y;
+	unsigned int size = sizeof(n) * 8, count = 0, flip = 0;
+	unsigned long int i = 1;
 
-	(void)size;
-	for (count = 0; count < size; count++)
+	n ^= m;
+	while (count < size)
 	{
-		x = n;
-		y = m;
-		for (count2 = 0; count2 < index; count2++)
+		if (n & i)
 		{
-			x >>= 1;
-			y >>= 1;
-		}
-		for (count2 = 0; count2 < size - 1; count2++)
-		{
-			x <<= 1;
-			y <<= 1;
-		}
-		if (x != y)
 			flip++;
+		}
+		i <<= 1;
 		count++;
-		index++;
 	}
 	return (flip);
 }
