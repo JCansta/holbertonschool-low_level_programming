@@ -10,23 +10,14 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int size = sizeof(n) * 8, count = 0;
+	unsigned int count = 0, size = sizeof(n) * 8;
+	unsigned long int check = 1;
+	int y;
 
 	if (index > size)
 		return (-1);
-	while (count < index)
-	{
-		n >>= 1;
-		count++;
-	}
-	count = 0;
-	while (count < size - 1)
-	{
-		n <<= 1;
-		count++;
-	}
-	if (n != 0)
-		return (1);
-	else
-		return (0);
+	for (count = 0; count < index; count++)
+		check <<= 1;
+	y = (check & n) ? 1 : 0;
+	return (y);
 }
