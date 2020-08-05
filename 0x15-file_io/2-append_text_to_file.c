@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * create_file - create a file
+ * append_text_to_file - append a text
  * @filename: the text
  * @text_content: the amount of letters
  * Return: how many letters print
