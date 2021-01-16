@@ -3,6 +3,7 @@
  * key_index - gives the index of a key
  * @key: the key to find
  * @size: is the size of the array
+ * Return: the number of localisation
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
